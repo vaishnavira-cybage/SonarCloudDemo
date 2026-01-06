@@ -7,6 +7,12 @@
 
     <IsPackable>false</IsPackable>
     <IsTestProject>true</IsTestProject>
+
+    <!-- Coverlet configuration -->
+    <CollectCoverage>true</CollectCoverage>
+    <!-- Output relative to project directory -->
+    <CoverletOutput>$(MSBuildProjectDirectory)/results/coverage</CoverletOutput>
+    <CoverletOutputFormat>opencover,cobertura</CoverletOutputFormat>
   </PropertyGroup>
 
   <ItemGroup>
